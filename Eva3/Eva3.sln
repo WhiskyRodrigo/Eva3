@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eva3", "Eva3.csproj", "{2A46FD28-9987-4B04-8952-13CAEDEC111D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin", "..\Admin\Admin.csproj", "{47E6F130-1715-482B-9A3F-01C746F03D25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eva3Admin", "..\Admin\Eva3Admin.csproj", "{47E6F130-1715-482B-9A3F-01C746F03D25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
