@@ -8,10 +8,11 @@ namespace Admin.DAL
 {
     public interface IMedidorDAL
     {
-        List<Medidor> Obtener();
-        void Agregar(Medidor cliente);
+        // obtiene y devuelve la lista de medidores.
+        List<Medidor> ObtenerMedidor();   
 
-        //esta eliminara en la BD, por lo cual recibe el RUT
-        void Eliminar(string rut);
+        //agrega medidor.
+        void AgregarMedidor(Medidor medidor);   
+
     }
 }
