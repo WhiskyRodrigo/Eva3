@@ -24,31 +24,31 @@ namespace StarCap
         protected global::System.Web.UI.WebControls.Label mensajesLbl;
 
         /// <summary>
-        /// Control nombretxt.
+        /// Control nClientetxt.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombretxt;
+        protected global::System.Web.UI.WebControls.TextBox nClientetxt;
 
         /// <summary>
-        /// Control ruttxt.
+        /// Control medidortxt.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ruttxt;
+        protected global::System.Web.UI.WebControls.TextBox medidortxt;
 
         /// <summary>
-        /// Control bebidaDbl.
+        /// Control Cliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList bebidaDbl;
+        protected global::System.Web.UI.WebControls.DropDownList Cliente;
 
         /// <summary>
         /// Control nivelRbl.

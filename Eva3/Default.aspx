@@ -11,16 +11,16 @@
                 </div>
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="nombreTxt">Nombre</label>
-                        <asp:TextBox ID="nombretxt" CssClass="form-control" runat="server"></asp:TextBox>
+                        <label for="nombreCliente">Nombre de cliente</label>
+                        <asp:TextBox ID="nClientetxt" CssClass="form-control" runat="server"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <label for="rutTxt">Rut</label>
-                        <asp:TextBox ID="ruttxt" CssClass="form-control" runat="server" ></asp:TextBox>
+                        <label for="medidorTxt">Medidor</label>
+                        <asp:TextBox ID="medidortxt" CssClass="form-control" runat="server" ></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <label for="bebidaDbl">Bebida Favorita</label>                        
-      <!--<select>-->  <asp:DropDownList runat="server" ID="bebidaDbl" CssClass="form-select" AppendDataBoundItems="true">
+                        <label for="Cliente">Cliente</label>                        
+      <!--<select>-->  <asp:DropDownList runat="server" ID="Cliente" CssClass="form-select" AppendDataBoundItems="true">
                             <asp:ListItem Text="Seleccione una opcion"></asp:ListItem>
 
                         </asp:DropDownList>
