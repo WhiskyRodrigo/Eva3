@@ -13,15 +13,6 @@ namespace Eva3
     {
         private IMedidorDAL medidorDAL = new MedidorDALObjeto();
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!IsPostBack)
-            {
-                cargarMedidor();
-                cargarHora();
-            } 
-        }
-
         //Datos del medidor.
         private void cargarMedidor()
         {
@@ -42,13 +33,7 @@ namespace Eva3
             };
 
             medidor.Lectura = lectura;
-
-            Response.Redirect("VerMedidores.aspx");
-        }
-
-        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
-        {
-
+            Response.Redirect("VerMedidor.aspx");
         }
         private bool validateData()
         {
@@ -61,10 +46,9 @@ namespace Eva3
             this.mensajesLbl.Text = "";
 
             double consumo;
-            // Validar consumo
             if (!double.TryParse(this.MConsumoTxt.Text, out consumo))
             {
-                this.MConsumo.Text = "Ingrese un consumo Válido";
+                this.MConsumo.Text = "Ingrese un consumo Valido";
                 return false;
             }
             this.MConsumoTxt.Text = "";

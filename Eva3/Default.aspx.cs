@@ -12,8 +12,6 @@ namespace Eva3
     public partial class Default : System.Web.UI.Page
     {
         private IMedidorDAL medidorDAL = new MedidorDALObjeto();
-        private ITipoMedidorDAL tipoMedidorDAL = new TipoMedidorDALObjeto();
-
         protected void agregarBtn_Click(object sender, EventArgs e)
         {
             if (!validateData()) return;
