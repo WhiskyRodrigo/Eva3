@@ -15,14 +15,14 @@ namespace Eva3
         private IMedidorDAL clienteDAL = new MedidorDALObjetos();
         private ILecturaDAL bebidaDAL = new LecturaDALObjetos();
 
+        //agregar datos.
         protected void agregarBtn_Click(object sender, EventArgs e)
         {
-            //1. Obtener los datos del fomulario
+      
             string medidor = this.medidortxt.Text.Trim();
             string modelo = this.modelotxt.Text.Trim();
 
             int nivel = Convert.ToInt32(this.nivelRbl.SelectedItem.Value);
-            //2.1 Construir el obejeto Bebida
 
             List<Bebida> bebidas = bebidaDAL.ObtenerBebidas();
             Bebida bebida = bebidas.Find(b => b.Codigo == this.bebidaDbl.SelectedItem.Value);
