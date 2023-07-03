@@ -11,7 +11,6 @@ namespace Admin.DAL
         //lista de lecturas
         private static List<Lectura> lecturas = new List<Lectura>(); 
         
-
         // Agregar lectura a la lista
         public void AgregarLectura(Lectura lectura)
         {

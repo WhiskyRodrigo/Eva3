@@ -8,10 +8,10 @@ namespace Admin.DAL
 {
     public interface ILecturaDAL
     {
-        //Obtenemos las lecturas
+        //Obtenemos las lectura
         List<Lectura> ObtenerLectura();  
 
-        //Agregar lecturas
+        //Agregar lectura
         void AgregarLectura(Lectura lectura);  
 
     } 

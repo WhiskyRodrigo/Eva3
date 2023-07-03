@@ -21,15 +21,7 @@
                         <label for="fechaN">Seleccione Fecha</label>
                         <asp:Calendar ID="fechaN" runat="server" OnSelectionChanged="fechaN_SelectionChanged"></asp:Calendar>
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="horaList">Hora</label>
-                                <<asp:DropDownList runat="server" ID="horaList" CssClass="form-select" AppendDataBoundItems="true">
-                                    <asp:ListItem Text="00"></asp:ListItem>
-                                </asp:DropDownList>
-                            </div>
-                        </div>
+                    </div>
                     </div>
 
                     <div class="form-group">
@@ -42,6 +34,4 @@
                 <asp:Button runat="server" ID="guardarLectura" OnClick="guardarLectura_Click" CssClass="btn btn-dark btn-lg" Text="Guardar Lectura" />
             </div>
             </div>
-        </div>
-    </div>
 </asp:Content>

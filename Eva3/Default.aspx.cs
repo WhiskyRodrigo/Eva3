@@ -1,10 +1,8 @@
-﻿using Eva3;
-using Admin.DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
-using System.Web.DynamicData;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -12,35 +10,40 @@ namespace Eva3
 {
     public partial class Default : System.Web.UI.Page
     {
-        private IMedidorDAL clienteDAL = new MedidorDALObjetos();
-        private ILecturaDAL bebidaDAL = new LecturaDALObjetos();
+        private IMedidorDAL medidorDAL = new MedidoresDALObjeto();
+        private ITipoMedidorDAL tipoMedidorDAL = new TipoMedidorDALObjeto();
 
-        //agregar datos.
         protected void agregarBtn_Click(object sender, EventArgs e)
         {
-      
-            string medidor = this.medidortxt.Text.Trim();
-            string modelo = this.modelotxt.Text.Trim();
+            if (!validateData()) return;
+            string serialNumber = this.serialNumberTxt.Text.Trim();  
+            string type = this.typeList.SelectedValue;
 
-            int nivel = Convert.ToInt32(this.nivelRbl.SelectedItem.Value);
-
-            List<Bebida> bebidas = bebidaDAL.ObtenerBebidas();
-            Bebida bebida = bebidas.Find(b => b.Codigo == this.bebidaDbl.SelectedItem.Value);
-
-            //2.2  Construir el objeto de tipo cliente
-
-            Cliente cliente = new Cliente()
+            Medidor medidor = new Medidor()
             {
-                Nombre = nombre,
-                Rut = rut,
-                Nivel = nivel,
-                Bebidafavorita = bebida
+                SerialNumber = serialNumber,
+                Type = type
             };
-            //3. Llamar al DAL
-            clienteDAL.Agregar(cliente);
-            //4. Mostrar mensaje de exito
-            this.mensajesLbl.Text = "Cliente Guardado correctamente";
-            Response.Redirect("VerClientes.aspx");
+
+            medidorDAL.AgregarMedidores(medidor);
+
+            Response.Redirect("VerMedidores.aspx");
+
+        } 
+
+        private bool validateData()
+        {
+            if (this.serialNumberTxt.Text == "")
+            {
+                this.mensajesLbl.Text = "Ingrese un número de Serie";
+                return false;
+            }
+            if (typeList.SelectedValue.Equals("Seleccione una opcion"))
+            {
+                this.mensajesLbl.Text = "Indique tipo de medidor";
+                return false;
+            }
+            return true;
         }
     }
 }

@@ -24,40 +24,22 @@ namespace Eva3
         protected global::System.Web.UI.WebControls.Label mensajesLbl;
 
         /// <summary>
-        /// Control nClientetxt.
+        /// Control serialNumberTxt.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nClientetxt;
+        protected global::System.Web.UI.WebControls.TextBox serialNumberTxt;
 
         /// <summary>
-        /// Control medidortxt.
+        /// Control typeList.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox medidortxt;
-
-        /// <summary>
-        /// Control Cliente.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Cliente;
-
-        /// <summary>
-        /// Control nivelRbl.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList nivelRbl;
+        protected global::System.Web.UI.WebControls.DropDownList typeList;
 
         /// <summary>
         /// Control agregarBtn.
