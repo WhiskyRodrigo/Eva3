@@ -9,16 +9,16 @@ namespace Admin.DAL
     public class MedidorDALObjeto : IMedidorDAL
     {
         //lista de medidores.
-        private static List<Medidor> medidores = new List<Medidor>();
+        private static List<Medidor> medidorN = new List<Medidor>();
 
         //agrega nuevos medidores
         public void AgregarMedidor(Medidor medidor)
         {
-            medidores.Add(medidor);
+            medidorN.Add(medidor);
         }
         public List<Medidor> ObtenerMedidor()
         {
-            return medidores;
+            return medidorN;
         }
 
     }

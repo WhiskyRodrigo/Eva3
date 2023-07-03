@@ -5,12 +5,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Admin;
 
 namespace Eva3
 {
     public partial class Default : System.Web.UI.Page
     {
-        private IMedidorDAL medidorDAL = new MedidoresDALObjeto();
+        private IMedidorDAL medidorDAL = new MedidorDALObjeto();
         private ITipoMedidorDAL tipoMedidorDAL = new TipoMedidorDALObjeto();
 
         protected void agregarBtn_Click(object sender, EventArgs e)
@@ -25,9 +26,9 @@ namespace Eva3
                 Type = type
             };
 
-            medidorDAL.AgregarMedidores(medidor);
+            medidorDAL.AgregarMedidor(medidor);
 
-            Response.Redirect("VerMedidores.aspx");
+            Response.Redirect("VerMedidor.aspx");
 
         } 
 

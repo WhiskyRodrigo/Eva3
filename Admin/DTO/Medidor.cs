@@ -12,11 +12,8 @@ namespace Admin
         private int boleta;
         private int numCliente;
         private int numMedidor;
-        private string empresa;
-
         public int Boleta { get => boleta; set => boleta = value; }
         public int NumCliente { get => numCliente; set => numCliente = value; }
         public int NumMedidor { get => numMedidor; set => numMedidor = value; }
-        public string Empresa { get => empresa; set => empresa = value; }
     }
 }

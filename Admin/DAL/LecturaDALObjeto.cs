@@ -9,17 +9,17 @@ namespace Admin.DAL
     public class LecturaDALObjeto : ILecturaDAL
     {
         //lista de lecturas
-        private static List<Lectura> lecturas = new List<Lectura>(); 
+        private static List<Lectura> lecturaN = new List<Lectura>(); 
         
         // Agregar lectura a la lista
         public void AgregarLectura(Lectura lectura)
         {
-            lecturas.Add(lectura);  
+            lecturaN.Add(lectura);  
         }
         //leer lecturas
         public List<Lectura> ObtenerLectura()
         {
-            return lecturas;    
+            return lecturaN;    
         } 
 
     }
