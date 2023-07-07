@@ -20,8 +20,7 @@ namespace Eva3
 
             Medidor medidor = new Medidor()
             {
-                SerialNumber = serialNumber,
-                Type = type
+ 
             };
 
             medidorDAL.AgregarMedidor(medidor);
