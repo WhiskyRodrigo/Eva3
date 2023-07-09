@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Eva3
 {
-    public partial class PrincipalMaster : System.Web.UI.MasterPage
+    public partial class VisualizarLectura : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

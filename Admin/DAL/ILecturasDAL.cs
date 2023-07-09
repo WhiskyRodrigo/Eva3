@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Admin.DAL
 {
-    public interface ILecturaDAL
+    public interface ILecturasDAL
     {
         //Obtenemos las lectura
         List<Lectura> ObtenerLectura();  

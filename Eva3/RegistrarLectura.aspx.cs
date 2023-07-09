@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Eva3
 {
-    public partial class VerMedidor : System.Web.UI.Page
+    public partial class RegistrarLectura : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

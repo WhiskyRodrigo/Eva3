@@ -67,45 +67,53 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
-    <Content Include="IngresarLectura.aspx" />
-    <Content Include="VerMedidor.aspx" />
+    <Content Include="RegistrarLectura.aspx" />
+    <Content Include="RegistrarMedidor.aspx" />
+    <Content Include="VisualizarLectura.aspx" />
+    <Content Include="VisualizarMedidor.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="IngresarLectura.aspx.cs">
-      <DependentUpon>IngresarLectura.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="IngresarLectura.aspx.designer.cs">
-      <DependentUpon>IngresarLectura.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalMaster.Master.cs">
-      <DependentUpon>PrincipalMaster.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PrincipalMaster.Master.designer.cs">
-      <DependentUpon>PrincipalMaster.Master</DependentUpon>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VerMedidor.aspx.cs">
-      <DependentUpon>VerMedidor.aspx</DependentUpon>
+    <Compile Include="RegistrarLectura.aspx.cs">
+      <DependentUpon>RegistrarLectura.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="VerMedidor.aspx.designer.cs">
-      <DependentUpon>VerMedidor.aspx</DependentUpon>
+    <Compile Include="RegistrarLectura.aspx.designer.cs">
+      <DependentUpon>RegistrarLectura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarMedidor.aspx.cs">
+      <DependentUpon>RegistrarMedidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarMedidor.aspx.designer.cs">
+      <DependentUpon>RegistrarMedidor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarLectura.aspx.cs">
+      <DependentUpon>VisualizarLectura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualizarLectura.aspx.designer.cs">
+      <DependentUpon>VisualizarLectura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarMedidor.aspx.cs">
+      <DependentUpon>VisualizarMedidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualizarMedidor.aspx.designer.cs">
+      <DependentUpon>VisualizarMedidor.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="PrincipalMaster.Master" />
+    <Content Include="Principal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

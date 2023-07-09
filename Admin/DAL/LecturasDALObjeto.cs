@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Admin.DAL
 {
-    public class LecturaDALObjeto : ILecturaDAL
+    public class LecturasDALObjeto : ILecturasDAL
     {
         //lista de lecturas
         private static List<Lectura> lecturaN = new List<Lectura>(); 
