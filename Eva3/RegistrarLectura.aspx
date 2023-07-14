@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="RegistrarLectura.aspx.cs" Inherits="Eva3.RegistrarLectura" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <div class="row">
+        <div class="row">
         <div class="col-lg-6 mx-auto">
             <div class="card">
                 <div class="card-header bg-danger text-white">
@@ -9,17 +9,10 @@
                 <div class="card-body">
                     <asp:GridView CssClass="table table-hover table-bordered" runat="server" 
                          OnRowCommand="grillaLectura_RowCommand"
-                         AutoGenerateColumns="false" ID="grillaLectura">
+                         AutoGenerateColumns="false" ID="grillaLecturas">
                         <Columns>
-                            <asp:BoundField DataField="Fecha" HeaderText="Fecha Lectura" />
-                            <asp:BoundField DataField="Consumo" HeaderText="Cantidad de Consumo" />
-                            <asp:TemplateField>
-                                <ItemTemplate>
-                                    <asp:Button CommandName="AgregarLectura" CommandArgument='<%# Eval("Nombre") %>' 
-                                        
-                                        runat="server" CssClass="btn btn-danger" Text="Agregar" />
-                                </ItemTemplate>
-                            </asp:TemplateField>
+                            <asp:BoundField DataField="Fecha" HeaderText="Fecha de lectura" />
+                            <asp:BoundField DataField="Consumo" HeaderText="Consumo" />
                         </Columns>
                     </asp:GridView>
                 </div>

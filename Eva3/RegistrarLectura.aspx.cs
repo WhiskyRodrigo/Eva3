@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace Eva3
 {
-    public partial class VerLecturas : System.Web.UI.Page
+    public partial class VerClientes : System.Web.UI.Page
     {
         private ILecturasDAL lecturasDAL = new LecturasDALObjeto();
         protected void Page_Load(object sender, EventArgs e)
@@ -22,20 +22,10 @@ namespace Eva3
 
         protected void cargagrilla()
         {
-            List<Lectura> lectura = lecturaDAL.ObtenerLecturas();
-            this.grillaLectura.DataSource = lectura;
-            this.grillaLectura.DataBind();
+            List<Lectura> lecturas = lecturasDAL.ObtenerLectura();
+            this.grillaLecturas.DataSource = lecturas;
+            this.grillaLecturas.DataBind();
         }
-
-        protected void grillaMedidor_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-            if (e.CommandName == "agregar")
-            {
-
-                string nombre = Convert.ToString(e.CommandArgument);
-                lecturaDAL.Agregar(nombre);
-                cargagrilla();
-            }
-        }
+ 
     }
 }
