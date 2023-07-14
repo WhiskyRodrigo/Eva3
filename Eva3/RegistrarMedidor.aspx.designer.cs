@@ -15,67 +15,31 @@ namespace Eva3
     {
 
         /// <summary>
-        /// Control rutTXT.
+        /// Control boletaTXT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rutTXT;
+        protected global::System.Web.UI.WebControls.TextBox boletaTXT;
 
         /// <summary>
-        /// Control nombreTXT.
+        /// Control numClienteTXT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreTXT;
+        protected global::System.Web.UI.WebControls.TextBox numClienteTXT;
 
         /// <summary>
-        /// Control apellidoTXT.
+        /// Control numMedidorTXT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox apellidoTXT;
-
-        /// <summary>
-        /// Control edadTXT.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox edadTXT;
-
-        /// <summary>
-        /// Control empresaTXT.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empresaTXT;
-
-        /// <summary>
-        /// Control estadoRbl.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList estadoRbl;
-
-        /// <summary>
-        /// Control regionDDL.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList regionDDL;
+        protected global::System.Web.UI.WebControls.TextBox numMedidorTXT;
 
         /// <summary>
         /// Control ingresaBtn.
