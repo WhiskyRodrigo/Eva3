@@ -9,7 +9,7 @@
                 <div class="card-body">
                     <asp:GridView CssClass="table table-hover table-bordered" runat="server" 
                          OnRowCommand="grillaLectura_RowCommand"
-                         AutoGenerateColumns="false" ID="grillaLecturas">
+                         AutoGenerateColumns="false" ID="grillaLectura">
                         <Columns>
                             <asp:BoundField DataField="Fecha" HeaderText="Fecha de lectura" />
                             <asp:BoundField DataField="Consumo" HeaderText="Consumo" />
