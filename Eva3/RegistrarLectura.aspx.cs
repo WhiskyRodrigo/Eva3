@@ -1,5 +1,6 @@
 ﻿using Admin;
 using Admin.DAL;
+using Admin.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace Eva3
 {
-    public partial class VerClientes : System.Web.UI.Page
+    public partial class RegistrarLectura : System.Web.UI.Page
     {
         private ILecturasDAL lecturasDAL = new LecturasDALObjeto();
         protected void Page_Load(object sender, EventArgs e)
@@ -32,8 +33,8 @@ namespace Eva3
             {
                 //al crear el boton, este elimina la lectura
 
-                string rut = Convert.ToString(e.CommandArgument);
-                LecturasDAL.Eliminar(rut);
+                string boleta = Convert.ToString(e.CommandArgument);
+                lecturasDAL.Eliminar(boleta);
                 cargagrilla();
             }
         }

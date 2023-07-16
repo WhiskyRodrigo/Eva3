@@ -13,8 +13,9 @@ namespace Admin.DAL
         List<Lectura> ObtenerLectura();  
 
         //Agregar lectura
-        void AgregarLectura(Lectura lectura);  
+        void AgregarLectura(Lectura lectura);
 
+        void Eliminar(string boleta);
     } 
 }
 
