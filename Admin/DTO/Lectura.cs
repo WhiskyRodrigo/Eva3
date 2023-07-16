@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Admin
+namespace Admin.DTO
 {
     public class Lectura
     {
